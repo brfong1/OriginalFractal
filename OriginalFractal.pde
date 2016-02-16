@@ -11,23 +11,12 @@ public void draw()
 }
 public void fractal(int x,int y,int len)
 {
-	//int p = (int)(Math.random())*255;
-
-	if(len >= 75)
+	if(len >= 10)
 	{
-
-	  //stroke(p,p,p);
-	  // fractal(x,y,len/2);
 	  ellipse(x,y,len,len);
 	  fractal(x+len/4,y,len/2);
 	  fractal(x,y+len/4,len/2);
 	  fractal(x-len/4,y,len/2);
 	  fractal(x,y-len/4,len/2);
 	}
- //    else
- //    {
- //    	System.out.println("no");
- //      //stroke(p,p,p);
-	//   // ellipse(x,y,len,len);
-	// }
 }
